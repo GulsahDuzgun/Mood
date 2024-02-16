@@ -1,18 +1,19 @@
-$color-primary-dark--2: #050710;
-$color-primary-dark: #182042;
-$color-primary: #4d5ea5;
-$color-primary-light: #788ee8;
+$color-primary-dark--2: #c2255c;
+$color-primary-dark: #ce517d;
+$color-primary: #d4668d;
+$color-primary-light: #da7c9d;
 
-$color-secondary-dark--2: #f59f00;
 $color-secondary-dark: #fab005;
-$color-secondary: #fcc419;
-$color-secondary-light: #ffd43b;
+$color-secondary: #ffec99;
+$color-secondary-light: #fff3bf;
+$color-secondary-light--2: #fff4c5;
+$color-secondary-light--3: #fff9db;
 
-$color-text-dark: #d2d6e5;
-$color-text: #eaecf3;
+$color-text: #fbf1f5;
+$color-text-dark: #faeef2;
 
-$font-style-italic: "Fira Sans";
-$font-style-normal: "Libre Franklin";
+$font-style-italic: "Libre Franklin";
+$font-style-normal: "Fira Sans";
 
 *,
 *::before,
@@ -28,14 +29,7 @@ html {
 }
 
 body {
-  font-style: $font-style-normal;
+  font-family: $font-style-normal;
   color: $color-primary-dark--2;
   font-size: 1.6rem;
-}
-
-.test {
-  background-color: $color-primary;
-
-  color: $color-text;
-  font-style: $font-style-italic;
 }
