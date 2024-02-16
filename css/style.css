@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-style: "Libre Franklin";
+  color: #050710;
+  font-size: 1.6rem; }
+
+.test {
+  background-color: #4d5ea5;
+  color: #eaecf3;
+  font-style: "Fira Sans"; }
