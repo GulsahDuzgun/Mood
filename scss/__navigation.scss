@@ -43,6 +43,30 @@
     & > * {
       position: relative;
 
+      .hover {
+        &__list {
+          display: none;
+          position: absolute;
+          list-style: none;
+          top: calc(100% - 8px);
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: rgba($color-text, 0.9);
+          padding: 0.8rem 3.2rem;
+          color: #212529;
+        }
+
+        &__item {
+          margin: 1.6rem 0;
+          transition: all 0.3s;
+          text-wrap: nowrap;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+
       &::before {
         content: "";
         display: inline-block;
@@ -59,14 +83,17 @@
       &:hover::before {
         width: 75%;
       }
+
+      &:hover .hover__list {
+        display: block;
+        transition: all 0.3s;
+      }
     }
   }
 
   &__item {
     padding: 1.6rem 3.2rem;
-    &:hover &::before {
-      width: 150px;
-    }
+    position: relative;
   }
 
   &__link {
