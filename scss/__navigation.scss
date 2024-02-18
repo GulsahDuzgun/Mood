@@ -39,10 +39,34 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    & > * {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        bottom: 8px;
+        height: 2px;
+        width: 0;
+        transform: translateX(-50%);
+        background-color: $color-text-dark;
+        transition: width 0.3s;
+      }
+
+      &:hover::before {
+        width: 75%;
+      }
+    }
   }
 
   &__item {
     padding: 1.6rem 3.2rem;
+    &:hover &::before {
+      width: 150px;
+    }
   }
 
   &__link {
@@ -74,8 +98,8 @@
 
   &__icon {
     display: inline-block;
-    height: 2.4rem;
-    width: 2.4rem;
+    height: 2rem;
+    width: 2rem;
     fill: currentColor;
     transition: 0.2s all;
   }

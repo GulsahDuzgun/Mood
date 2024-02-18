@@ -38,8 +38,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly; }
+    .navigation__list > * {
+      position: relative; }
+      .navigation__list > *::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        bottom: 8px;
+        height: 2px;
+        width: 0;
+        transform: translateX(-50%);
+        background-color: #faeef2;
+        transition: width 0.3s; }
+      .navigation__list > *:hover::before {
+        width: 75%; }
   .navigation__item {
     padding: 1.6rem 3.2rem; }
+    .navigation__item:hover .navigation__item::before {
+      width: 150px; }
   .navigation__link {
     text-decoration: none;
     color: #fbf1f5; }
@@ -60,8 +77,8 @@ body {
         transform: translateY(-2px); }
   .navigation__icon {
     display: inline-block;
-    height: 2.4rem;
-    width: 2.4rem;
+    height: 2rem;
+    width: 2rem;
     fill: currentColor;
     transition: 0.2s all; }
 
