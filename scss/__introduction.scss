@@ -12,11 +12,20 @@
       position: relative;
       height: 100%;
       width: 100%;
+      cursor: pointer;
+      overflow: hidden;
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
     }
 
     &__img {
       height: 100%;
       width: 100%;
+      transition: all 0.4s;
     }
 
     &__btn {

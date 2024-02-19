@@ -169,10 +169,15 @@ body {
   .section__introduction .introduction__figure {
     position: relative;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden; }
+    .section__introduction .introduction__figure:hover img {
+      transform: scale(1.1); }
   .section__introduction .introduction__img {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    transition: all 0.4s; }
   .section__introduction .introduction__btn {
     position: absolute;
     z-index: 1;
