@@ -12,7 +12,11 @@ $color-secondary-light--3: #fff9db;
 $color-text: #fbf1f5;
 $color-text-dark: #faeef2;
 
-$color-bg-grey: #f8f9fa;
+$color-black: #212529;
+$color-grey: #f1f3f5;
+$color-grey-light: #f8f9fa;
+$color-grey-light--2: #fefefe;
+
 $font-style-italic: "Libre Franklin";
 $font-style-normal: "Fira Sans";
 
@@ -31,6 +35,6 @@ html {
 
 body {
   font-family: $font-style-normal;
-  color: $color-primary-dark--2;
+  color: $color-black;
   font-size: 1.6rem;
 }
