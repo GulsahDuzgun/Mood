@@ -1,0 +1,24 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-grey;
+    background-color: $color-black;
+    padding: 1.6rem 2.8rem;
+    align-self: flex-start;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  &--yellow:hover,
+  &--yellow:active {
+    background-image: linear-gradient(
+      120deg,
+      $color-secondary-dark,
+      $color-secondary-light--3
+    );
+
+    color: $color-grey;
+  }
+}
