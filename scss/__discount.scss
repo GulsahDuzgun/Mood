@@ -5,7 +5,7 @@
   .discount__box {
     display: grid;
     grid-template-columns:
-      minmax(450px, 50%)
+      minmax(450px, 40%)
       minmax(2.4rem, 1fr)
       minmax(450px, 50%);
     grid-template-rows: minmax(30rem, 60rem);
