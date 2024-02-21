@@ -17,7 +17,7 @@
       flex-direction: column;
       justify-content: space-between;
       overflow: hidden;
-      gap: 2.4rem;
+      gap: 2rem;
       background-color: $color-grey-light;
       cursor: pointer;
 
@@ -46,7 +46,7 @@
 
       &__img {
         position: absolute;
-        height: 150%;
+        height: 170%;
         width: 100%;
         top: -20px;
         left: 0;
@@ -56,13 +56,13 @@
       &__header {
         text-align: center;
         font-size: 2.4rem;
-        margin-bottom: -1.2rem;
+        margin-bottom: -1.6rem;
         text-transform: capitalize;
       }
 
       &__text {
-        padding: 0.4rem 3.2rem 4.8rem;
-        line-height: 1.2;
+        padding: 0.6rem 3.2rem 3.2rem;
+        line-height: 1.6;
         font-weight: 400;
       }
 
@@ -79,11 +79,11 @@
       }
 
       .img--3 {
-        height: 180%;
+        height: 190%;
       }
 
       .img--2 {
-        height: 170%;
+        height: 180%;
       }
     }
   }

@@ -1,0 +1,100 @@
+.footer {
+  display: grid;
+  background-color: $color-grey-light--2;
+  padding: 4.8rem 12rem 6.4rem;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 2.2rem;
+  font-size: 1.4rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .footer__item {
+      display: flex;
+
+      .footer__link {
+        text-decoration: none;
+        display: flex;
+        align-items: flex-end;
+        color: currentColor;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+
+  &__information {
+    .logo a:link,
+    .logo a:visited {
+      padding: 1.8rem 0;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: currentColor;
+      display: flex;
+      align-items: center;
+      text-align: end;
+    }
+
+    &-icon {
+      height: 2rem;
+      width: 2rem;
+      display: inline-block;
+      margin-right: 12px;
+    }
+  }
+
+  &__heading {
+    font-size: 1.6rem;
+    padding: 4.4rem 0 3.2rem;
+  }
+}
+
+.subscribe {
+  &__item {
+    position: relative;
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__input {
+    display: block;
+    width: 85%;
+    height: 4.8rem;
+    border-radius: 30px;
+    padding: 1.2rem 1.8rem;
+    overflow: visible;
+    transition: all 0.4s;
+  }
+
+  &__btn,
+  &__btn:link,
+  &__btn:visited {
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 58%;
+    width: 35%;
+    height: 100%;
+    margin: 0;
+    padding: 0.6rem 0.8rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+  }
+
+  &__btn:active {
+    left: 0;
+    right: 65%;
+  }
+}

@@ -20,18 +20,6 @@ body {
   justify-content: space-between;
   background-color: #d4668d;
   color: #fbf1f5; }
-  .navigation .logo__link:link, .navigation .logo__link:visited {
-    display: inline-block;
-    font-size: 4.4rem;
-    text-decoration: none;
-    font-family: "Libre Franklin";
-    padding: 1.2rem 3.2rem;
-    transition: 0.4s all;
-    color: transparent;
-    background-image: linear-gradient(120deg, #fab005, #fff9db);
-    background-clip: text; }
-  .navigation .logo__link:hover, .navigation .logo__link:active {
-    background-image: linear-gradient(135deg, #fab005, #fff3bf); }
   .navigation__list {
     font-size: 1.8rem;
     list-style: none;
@@ -192,6 +180,20 @@ body {
   padding: 1.6rem 4.8rem;
   margin: 6.4rem auto 0 auto; }
 
+.logo__link:link, .logo__link:visited {
+  display: inline-block;
+  font-size: 4.4rem;
+  text-decoration: none;
+  font-family: "Libre Franklin";
+  padding: 1.2rem 3.2rem;
+  transition: 0.4s all;
+  color: transparent;
+  background-image: linear-gradient(120deg, #fab005, #fff9db);
+  background-clip: text; }
+
+.logo__link:hover, .logo__link:active {
+  background-image: linear-gradient(135deg, #fab005, #fff3bf); }
+
 .section__heading {
   width: 40%;
   margin: 0 auto;
@@ -252,6 +254,20 @@ body {
   border-radius: 30px;
   padding: 1.6rem 4.8rem;
   margin: 6.4rem auto 0 auto; }
+
+.logo__link:link, .logo__link:visited {
+  display: inline-block;
+  font-size: 4.4rem;
+  text-decoration: none;
+  font-family: "Libre Franklin";
+  padding: 1.2rem 3.2rem;
+  transition: 0.4s all;
+  color: transparent;
+  background-image: linear-gradient(120deg, #fab005, #fff9db);
+  background-clip: text; }
+
+.logo__link:hover, .logo__link:active {
+  background-image: linear-gradient(135deg, #fab005, #fff3bf); }
 
 .section__introduction {
   background-color: #fefefe;
@@ -517,7 +533,7 @@ body {
       flex-direction: column;
       justify-content: space-between;
       overflow: hidden;
-      gap: 2.4rem;
+      gap: 2rem;
       background-color: #f8f9fa;
       cursor: pointer; }
       .section__description .description__box .description .img__box {
@@ -541,7 +557,7 @@ body {
           z-index: 9999; }
       .section__description .description__box .description__img {
         position: absolute;
-        height: 150%;
+        height: 170%;
         width: 100%;
         top: -20px;
         left: 0;
@@ -549,11 +565,11 @@ body {
       .section__description .description__box .description__header {
         text-align: center;
         font-size: 2.4rem;
-        margin-bottom: -1.2rem;
+        margin-bottom: -1.6rem;
         text-transform: capitalize; }
       .section__description .description__box .description__text {
-        padding: 0.4rem 3.2rem 4.8rem;
-        line-height: 1.2;
+        padding: 0.6rem 3.2rem 3.2rem;
+        line-height: 1.6;
         font-weight: 400; }
       .section__description .description__box .description:hover .img__box .description__img {
         transform: translateY(-120px);
@@ -562,6 +578,80 @@ body {
         transform: scaleX(100%);
         border: 2px solid #e9ecef; }
       .section__description .description__box .description .img--3 {
-        height: 180%; }
+        height: 190%; }
       .section__description .description__box .description .img--2 {
-        height: 170%; }
+        height: 180%; }
+
+.footer {
+  display: grid;
+  background-color: #fefefe;
+  padding: 4.8rem 12rem 6.4rem;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 2.2rem;
+  font-size: 1.4rem; }
+  .footer__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .footer__list .footer__item {
+      display: flex; }
+      .footer__list .footer__item .footer__link {
+        text-decoration: none;
+        display: flex;
+        align-items: flex-end;
+        color: currentColor; }
+      .footer__list .footer__item:not(:last-child) {
+        margin-bottom: 1.2rem; }
+  .footer__information .logo a:link,
+  .footer__information .logo a:visited {
+    padding: 1.8rem 0; }
+  .footer__information-link {
+    text-decoration: none;
+    color: currentColor;
+    display: flex;
+    align-items: center;
+    text-align: end; }
+  .footer__information-icon {
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    margin-right: 12px; }
+  .footer__heading {
+    font-size: 1.6rem;
+    padding: 4.4rem 0 3.2rem; }
+
+.subscribe__item {
+  position: relative;
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center; }
+
+.subscribe__input {
+  display: block;
+  width: 85%;
+  height: 4.8rem;
+  border-radius: 30px;
+  padding: 1.2rem 1.8rem;
+  overflow: visible;
+  transition: all 0.4s; }
+
+.subscribe__btn, .subscribe__btn:link, .subscribe__btn:visited {
+  display: flex;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 58%;
+  width: 35%;
+  height: 100%;
+  margin: 0;
+  padding: 0.6rem 0.8rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 3; }
+
+.subscribe__btn:active {
+  left: 0;
+  right: 65%; }
