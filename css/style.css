@@ -273,7 +273,7 @@ body {
   background-color: #fefefe;
   padding: 8rem 12rem;
   display: grid;
-  grid-template-columns: repeat(4, min-max(10rem, 1fr)), repeat(2, min-max(20rem, 1fr)), repeat(2, min-max(8rem, 15rem));
+  grid-template-columns: repeat(8, minmax(8rem, 1fr));
   grid-template-rows: repeat(2, minmax(min-content, 30rem));
   gap: 1.2rem; }
   .section__introduction .introduction__figure {
