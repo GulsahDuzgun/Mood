@@ -4,13 +4,10 @@
 
   .discount__box {
     display: grid;
-    grid-template-columns:
-      minmax(450px, 40%)
-      minmax(2.4rem, 1fr)
-      minmax(450px, 50%);
-    grid-template-rows: minmax(30rem, 60rem);
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 60rem));
+    grid-template-rows: minmax(20rem, 60rem);
+    column-gap: 3.2rem;
     overflow: hidden;
-    backface-visibility: hidden;
 
     img {
       width: 100%;
@@ -43,7 +40,7 @@
       grid-column: 3/4;
 
       .img__glasses {
-        height: 150%;
+        height: 120%;
         width: 100%;
         transform: translateY(-100px);
         transition: all 0.4s;

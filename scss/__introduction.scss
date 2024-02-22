@@ -2,7 +2,7 @@
   background-color: $color-grey-light--2;
   padding: 8rem 12rem;
   display: grid;
-  grid-template-columns: repeat(8, minmax(8rem, 1fr));
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
   grid-template-rows: repeat(2, minmax(min-content, 30rem));
   gap: 1.2rem;
 
