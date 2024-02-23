@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(8, minmax(min-content, 1fr));
   grid-template-rows: repeat(2, minmax(min-content, 30rem));
-  gap: 1.2rem;
+  gap: 2.4rem;
 
   .introduction {
     &__figure {
