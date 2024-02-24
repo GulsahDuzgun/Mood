@@ -2,38 +2,36 @@
   display: grid;
   background-color: $color-grey;
   padding: 6vh 8vw 8vh;
-  grid-template-columns: 2fr 1fr 1fr 2fr;
-  gap: 2.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.4rem;
   font-size: 1.4rem;
 
   &__list {
     list-style: none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 1.6rem;
     justify-content: space-between;
 
     .footer__item {
-      display: flex;
-
-      .footer__link {
+      .footer__link:link,
+      .footer__link:visited {
+        display: grid;
+        grid-template-columns: 2.4rem 1fr;
         text-decoration: none;
         display: flex;
-        align-items: flex-end;
         color: currentColor;
       }
+    }
 
-      &:not(:last-child) {
-        margin-bottom: 1.2rem;
+    .footer__item {
+      .logo__link:link,
+      .logo__link:visited {
+        padding: 2.4rem 0 2.4rem;
       }
     }
   }
 
   &__information {
-    .logo a:link,
-    .logo a:visited {
-      padding: 1.8rem 0;
-    }
-
     &-link {
       text-decoration: none;
       color: currentColor;
@@ -43,16 +41,16 @@
     }
 
     &-icon {
-      height: 2rem;
-      width: 2rem;
+      height: 2.2rem;
+      width: 2.2rem;
       display: inline-block;
       margin-right: 12px;
     }
   }
 
   &__heading {
-    font-size: 1.6rem;
-    padding: 4.4rem 0 3.2rem;
+    font-size: 1.8rem;
+    padding: 4.8rem 0 3.2rem;
   }
 }
 
@@ -61,7 +59,7 @@
     position: relative;
     margin-top: 2.4rem;
     display: flex;
-    justify-content: center;
+    justify-content: end;
   }
 
   &__input {
@@ -82,7 +80,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    left: 58%;
+    left: 66%;
     width: 35%;
     height: 100%;
     margin: 0;
@@ -94,7 +92,6 @@
   }
 
   &__btn:active {
-    left: 0;
-    right: 65%;
+    left: 13%;
   }
 }

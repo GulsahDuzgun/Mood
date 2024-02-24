@@ -6,7 +6,7 @@
     display: grid;
     overflow: hidden;
     backface-visibility: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 35rem));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 45rem));
     grid-template-rows: repeat(auto-fit, minmax(max-content, 30rem));
     grid-auto-rows: repeat(auto-fit, minmax(10rem, 15rem));
     justify-content: space-between;

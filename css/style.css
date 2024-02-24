@@ -337,12 +337,12 @@ body {
   text-align: center; }
   .section__products .products {
     display: grid;
-    justify-content: space-between;
+    justify-content: center;
     grid-auto-flow: row;
-    grid-auto-rows: minmax(max-content, 45rem);
+    grid-auto-rows: minmax(max-content, 60rem);
     grid-template-columns: repeat(auto-fit, minmax(35rem, max-content));
     grid-template-rows: repeat(auto-fit, minmax(max-content, 60rem));
-    gap: 2.4rem 4.8rem;
+    gap: 2.4rem 9rem;
     margin: 3.2rem 0 4.8rem; }
     .section__products .products .product {
       position: relative;
@@ -484,7 +484,7 @@ body {
     display: grid;
     overflow: hidden;
     backface-visibility: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 35rem));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 45rem));
     grid-template-rows: repeat(auto-fit, minmax(max-content, 30rem));
     grid-auto-rows: repeat(auto-fit, minmax(10rem, 15rem));
     justify-content: space-between;
@@ -601,26 +601,24 @@ body {
   display: grid;
   background-color: #f1f3f5;
   padding: 6vh 8vw 8vh;
-  grid-template-columns: 2fr 1fr 1fr 2fr;
-  gap: 2.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.4rem;
   font-size: 1.4rem; }
   .footer__list {
     list-style: none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 1.6rem;
     justify-content: space-between; }
-    .footer__list .footer__item {
-      display: flex; }
-      .footer__list .footer__item .footer__link {
-        text-decoration: none;
-        display: flex;
-        align-items: flex-end;
-        color: currentColor; }
-      .footer__list .footer__item:not(:last-child) {
-        margin-bottom: 1.2rem; }
-  .footer__information .logo a:link,
-  .footer__information .logo a:visited {
-    padding: 1.8rem 0; }
+    .footer__list .footer__item .footer__link:link,
+    .footer__list .footer__item .footer__link:visited {
+      display: grid;
+      grid-template-columns: 2.4rem 1fr;
+      text-decoration: none;
+      display: flex;
+      color: currentColor; }
+    .footer__list .footer__item .logo__link:link,
+    .footer__list .footer__item .logo__link:visited {
+      padding: 2.4rem 0 2.4rem; }
   .footer__information-link {
     text-decoration: none;
     color: currentColor;
@@ -628,19 +626,19 @@ body {
     align-items: center;
     text-align: end; }
   .footer__information-icon {
-    height: 2rem;
-    width: 2rem;
+    height: 2.2rem;
+    width: 2.2rem;
     display: inline-block;
     margin-right: 12px; }
   .footer__heading {
-    font-size: 1.6rem;
-    padding: 4.4rem 0 3.2rem; }
+    font-size: 1.8rem;
+    padding: 4.8rem 0 3.2rem; }
 
 .subscribe__item {
   position: relative;
   margin-top: 2.4rem;
   display: flex;
-  justify-content: center; }
+  justify-content: end; }
 
 .subscribe__input {
   display: block;
@@ -657,7 +655,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  left: 58%;
+  left: 66%;
   width: 35%;
   height: 100%;
   margin: 0;
@@ -668,5 +666,4 @@ body {
   z-index: 3; }
 
 .subscribe__btn:active {
-  left: 0;
-  right: 65%; }
+  left: 13%; }
