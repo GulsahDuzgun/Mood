@@ -289,13 +289,13 @@ body {
   background-color: #fefefe;
   padding: 8vh 8vw;
   display: grid;
-  grid-template-columns: repeat(10, minmax(min-content, 20rem));
-  grid-template-rows: repeat(2, minmax(max-content, 10rem));
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 2.4rem; }
   .section__introduction .introduction__figure {
-    position: relative;
     height: 100%;
     width: 100%;
+    position: relative;
     cursor: pointer;
     overflow: hidden; }
     .section__introduction .introduction__figure:hover img {
@@ -303,7 +303,8 @@ body {
   .section__introduction .introduction__img {
     height: 100%;
     width: 100%;
-    transition: all 0.4s; }
+    transition: all 0.4s;
+    object-fit: cover; }
   .section__introduction .introduction__btn {
     position: absolute;
     z-index: 1;
@@ -482,20 +483,20 @@ body {
   padding: 8vh 8vw; }
   .section__discount .discount__box {
     display: grid;
-    overflow: hidden;
-    backface-visibility: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 45rem));
-    grid-template-rows: repeat(auto-fit, minmax(max-content, 30rem));
-    grid-auto-rows: repeat(auto-fit, minmax(10rem, 15rem));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(min-content, 30rem));
     justify-content: space-between;
     gap: 3.2rem; }
     .section__discount .discount__box .img__box {
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      overflow: hidden;
+      backface-visibility: hidden; }
     .section__discount .discount__box .img__box--accessories .img__accessories {
       transition: all 0.4s;
       width: 100%;
-      height: 120%; }
+      height: 120%;
+      object-fit: cover; }
       .section__discount .discount__box .img__box--accessories .img__accessories:hover {
         filter: brightness(80%);
         transform: translateY(-10%); }
@@ -503,12 +504,14 @@ body {
         transform: translate(-50%, -90%); }
     .section__discount .discount__box .img__box--bag .img__bag {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      object-fit: cover; }
     .section__discount .discount__box .img__box--glasses .img__glasses {
       height: 120%;
       width: 100%;
       transform: translateY(-100px);
-      transition: all 0.4s; }
+      transition: all 0.4s;
+      object-fit: cover; }
       .section__discount .discount__box .img__box--glasses .img__glasses:hover {
         transform: rotate(3deg) scale(0.95); }
       .section__discount .discount__box .img__box--glasses .img__glasses:hover + .text__box {
@@ -601,7 +604,7 @@ body {
   display: grid;
   background-color: #f1f3f5;
   padding: 6vh 8vw 8vh;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2.4rem;
   font-size: 1.4rem; }
   .footer__list {

@@ -4,17 +4,17 @@
 
   .discount__box {
     display: grid;
-    overflow: hidden;
-    backface-visibility: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 45rem));
-    grid-template-rows: repeat(auto-fit, minmax(max-content, 30rem));
-    grid-auto-rows: repeat(auto-fit, minmax(10rem, 15rem));
+
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(min-content, 30rem));
     justify-content: space-between;
     gap: 3.2rem;
 
     .img__box {
       position: relative;
       cursor: pointer;
+      overflow: hidden;
+      backface-visibility: hidden;
     }
 
     .img__box--accessories {
@@ -22,6 +22,7 @@
         transition: all 0.4s;
         width: 100%;
         height: 120%;
+        object-fit: cover;
 
         &:hover {
           filter: brightness(80%);
@@ -38,6 +39,7 @@
       .img__bag {
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
     }
 
@@ -47,6 +49,7 @@
         width: 100%;
         transform: translateY(-100px);
         transition: all 0.4s;
+        object-fit: cover;
 
         &:hover {
           transform: rotate(3deg) scale(0.95);
