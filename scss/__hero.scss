@@ -1,12 +1,21 @@
 .section__hero {
   background-color: $color-grey-light--2;
-  padding: 8vh 8vw;
+  padding: 4vh 8vw 8vh;
+  width: 100%;
+
   .hero {
     &__box {
-      display: flex;
-      height: 80vh;
+      display: grid;
+      justify-content: center;
+      justify-items: center;
+      grid-template-columns: max-content minmax(80rem, min-content);
+      grid-template-rows: repeat(auto-fit, minmax(min-content, 60rem));
       justify-content: space-between;
       align-items: center;
+      column-gap: 2.4rem;
+
+      grid-auto-columns: minmax(80rem, min-content);
+      grid-auto-rows: minmax(min-content, 60rem);
     }
 
     &__info {
