@@ -1,6 +1,9 @@
 .section__description {
   background-color: $color-grey-light--2;
   padding: 8vh 8vw;
+  @media only screen and (max-width: $bp-big) {
+    padding: 8vh 6vw;
+  }
 
   .description__box {
     display: grid;

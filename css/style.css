@@ -8,6 +8,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 87.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Fira Sans";
@@ -21,6 +24,9 @@ body {
   background-color: #d4668d;
   color: #fbf1f5;
   padding: 0 8vw; }
+  @media only screen and (max-width: 68.75em) {
+    .navigation {
+      padding: 0vh 6vw; } }
   .navigation__list {
     font-size: 1.8rem;
     list-style: none;
@@ -100,6 +106,9 @@ body {
   background-color: #fefefe;
   padding: 4vh 8vw 8vh;
   width: 100%; }
+  @media only screen and (max-width: 68.75em) {
+    .section__hero {
+      padding: 4vh 6vw 8vh; } }
   .section__hero .hero__box {
     display: grid;
     justify-content: center;
@@ -111,6 +120,9 @@ body {
     column-gap: 2.4rem;
     grid-auto-columns: minmax(80rem, min-content);
     grid-auto-rows: minmax(min-content, 60rem); }
+    @media only screen and (max-width: 87.5em) {
+      .section__hero .hero__box {
+        grid-template-columns: max-content minmax(min-content, 60rem); } }
   .section__hero .hero__info {
     display: flex;
     flex-direction: column;
@@ -299,6 +311,9 @@ body {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2.4rem; }
+  @media only screen and (max-width: 68.75em) {
+    .section__introduction {
+      padding: 8vh 6vw; } }
   .section__introduction .introduction__figure {
     height: 100%;
     width: 100%;
@@ -343,6 +358,9 @@ body {
   background-color: #fefefe;
   padding: 8vh 8vw;
   text-align: center; }
+  @media only screen and (max-width: 68.75em) {
+    .section__products {
+      padding: 8vh 6vw; } }
   .section__products .products {
     display: grid;
     justify-content: center;
@@ -350,8 +368,13 @@ body {
     grid-auto-rows: minmax(max-content, 60rem);
     grid-template-columns: repeat(auto-fit, minmax(35rem, max-content));
     grid-template-rows: repeat(auto-fit, minmax(max-content, 60rem));
-    gap: 2.4rem 9rem;
-    margin: 3.2rem 0 4.8rem; }
+    margin: 3.2rem 0 4.8rem;
+    justify-items: center;
+    gap: 5.2rem 8rem;
+    width: 100%; }
+    @media only screen and (max-width: 68.75em) {
+      .section__products .products {
+        justify-items: space-between; } }
     .section__products .products .product {
       position: relative;
       height: 100%;
@@ -484,10 +507,16 @@ body {
               width: 2rem;
               height: 2rem;
               fill: currentColor; }
+  .section__products .btn {
+    margin-top: 2.4rem;
+    margin-bottom: 6.4rem; }
 
 .section__discount {
   background-color: #fefefe;
   padding: 8vh 8vw; }
+  @media only screen and (max-width: 68.75em) {
+    .section__discount {
+      padding: 8vh 6vw; } }
   .section__discount .discount__box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
@@ -547,6 +576,9 @@ body {
 .section__description {
   background-color: #fefefe;
   padding: 8vh 8vw; }
+  @media only screen and (max-width: 68.75em) {
+    .section__description {
+      padding: 8vh 6vw; } }
   .section__description .description__box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
@@ -614,6 +646,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2.4rem;
   font-size: 1.4rem; }
+  @media only screen and (max-width: 68.75em) {
+    .footer {
+      padding: 4vh 6vw 8vh; } }
   .footer__list {
     list-style: none;
     display: grid;

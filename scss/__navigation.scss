@@ -5,6 +5,9 @@
   background-color: $color-primary;
   color: $color-text;
   padding: 0 8vw;
+  @media only screen and (max-width: $bp-big) {
+    padding: 0vh 6vw;
+  }
 
   &__list {
     font-size: 1.8rem;

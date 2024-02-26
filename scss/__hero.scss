@@ -2,6 +2,9 @@
   background-color: $color-grey-light--2;
   padding: 4vh 8vw 8vh;
   width: 100%;
+  @media only screen and (max-width: $bp-big) {
+    padding: 4vh 6vw 8vh;
+  }
 
   .hero {
     &__box {
@@ -16,6 +19,10 @@
 
       grid-auto-columns: minmax(80rem, min-content);
       grid-auto-rows: minmax(min-content, 60rem);
+
+      @media only screen and (max-width: 87.5em) {
+        grid-template-columns: max-content minmax(min-content, 60rem);
+      }
     }
 
     &__info {

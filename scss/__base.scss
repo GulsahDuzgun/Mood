@@ -23,7 +23,8 @@ $font-style-italic: "Libre Franklin";
 $font-style-normal: "Fira Sans";
 
 //Media Queries Breakpoints
-$largest: 1200px;
+$bp-largest: 87.5em; //1400px
+$bp-big: 68.75em; //1100px
 
 *,
 *::before,
@@ -36,6 +37,10 @@ $largest: 1200px;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
 }
 
 body {

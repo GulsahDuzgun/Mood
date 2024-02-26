@@ -6,6 +6,10 @@
   gap: 2.4rem;
   font-size: 1.4rem;
 
+  @media only screen and (max-width: $bp-big) {
+    padding: 4vh 6vw 8vh;
+  }
+
   &__list {
     list-style: none;
     display: grid;
