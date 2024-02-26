@@ -5,8 +5,13 @@
   background-color: $color-primary;
   color: $color-text;
   padding: 0 8vw;
+
   @media only screen and (max-width: $bp-big) {
     padding: 0vh 6vw;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    position: relative;
   }
 
   &__list {
@@ -15,6 +20,18 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    @media only screen and (max-width: $bp-medium) {
+      position: absolute;
+      display: none;
+      background-color: $color-grey-light;
+      top: 90%;
+      left: 0;
+
+      &:hover {
+        display: flex;
+      }
+    }
 
     & > * {
       position: relative;
@@ -30,6 +47,13 @@
           background-color: rgba($color-grey-light, 0.9);
           padding: 0.8rem 3.2rem;
           color: $color-black;
+
+          @media only screen and (max-width: $bp-medium) {
+            display: block;
+            background-color: rgba($color-grey-light, 0.9);
+            text-align: start;
+            padding: 1.2rem 3.6rem;
+          }
         }
 
         &__item {
@@ -39,6 +63,11 @@
 
           &:hover {
             color: $color-primary;
+          }
+
+          @media only screen and (max-width: $bp-medium) {
+            display: block;
+            color: $color-black;
           }
         }
       }
@@ -75,6 +104,10 @@
   &__link {
     text-decoration: none;
     color: $color-text;
+
+    @media only screen and (max-width: $bp-medium) {
+      color: $color-black;
+    }
   }
 
   &__icons {
@@ -105,6 +138,24 @@
     width: 2rem;
     fill: currentColor;
     transition: 0.2s all;
+    @media only screen and (max-width: $bp-medium) {
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+  }
+
+  .logo {
+    &:hover {
+      @media only screen and (max-width: $bp-medium) {
+        background-color: rgba($color: $color-primary-dark--2, $alpha: 0.2);
+      }
+    }
+
+    &:hover + .navigation__list {
+      @media only screen and (max-width: $bp-medium) {
+        display: flex;
+      }
+    }
   }
 }
 /*

@@ -27,12 +27,24 @@ body {
   @media only screen and (max-width: 75em) {
     .navigation {
       padding: 0vh 6vw; } }
+  @media only screen and (max-width: 58em) {
+    .navigation {
+      position: relative; } }
   .navigation__list {
     font-size: 1.8rem;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-evenly; }
+    @media only screen and (max-width: 58em) {
+      .navigation__list {
+        position: absolute;
+        display: none;
+        background-color: #f8f9fa;
+        top: 90%;
+        left: 0; }
+        .navigation__list:hover {
+          display: flex; } }
     .navigation__list > * {
       position: relative; }
       .navigation__list > * .hover__list {
@@ -45,12 +57,22 @@ body {
         background-color: rgba(248, 249, 250, 0.9);
         padding: 0.8rem 3.2rem;
         color: #212529; }
+        @media only screen and (max-width: 58em) {
+          .navigation__list > * .hover__list {
+            display: block;
+            background-color: rgba(248, 249, 250, 0.9);
+            text-align: start;
+            padding: 1.2rem 3.6rem; } }
       .navigation__list > * .hover__item {
         margin: 1.6rem 0;
         transition: all 0.3s;
         text-wrap: nowrap; }
         .navigation__list > * .hover__item:hover {
           color: #d4668d; }
+        @media only screen and (max-width: 58em) {
+          .navigation__list > * .hover__item {
+            display: block;
+            color: #212529; } }
       .navigation__list > *::before {
         content: "";
         display: inline-block;
@@ -73,6 +95,9 @@ body {
   .navigation__link {
     text-decoration: none;
     color: #fbf1f5; }
+    @media only screen and (max-width: 58em) {
+      .navigation__link {
+        color: #212529; } }
   .navigation__icons {
     display: flex;
     align-items: center;
@@ -94,6 +119,16 @@ body {
     width: 2rem;
     fill: currentColor;
     transition: 0.2s all; }
+    @media only screen and (max-width: 58em) {
+      .navigation__icon {
+        height: 2.4rem;
+        width: 2.4rem; } }
+  @media only screen and (max-width: 58em) {
+    .navigation .logo:hover {
+      background-color: rgba(194, 37, 92, 0.2); } }
+  @media only screen and (max-width: 58em) {
+    .navigation .logo:hover + .navigation__list {
+      display: flex; } }
 
 /*
   SPACING SYSTEM (px)
