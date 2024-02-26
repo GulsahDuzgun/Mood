@@ -24,7 +24,7 @@ body {
   background-color: #d4668d;
   color: #fbf1f5;
   padding: 0 8vw; }
-  @media only screen and (max-width: 68.75em) {
+  @media only screen and (max-width: 75em) {
     .navigation {
       padding: 0vh 6vw; } }
   .navigation__list {
@@ -106,9 +106,9 @@ body {
   background-color: #fefefe;
   padding: 4vh 8vw 8vh;
   width: 100%; }
-  @media only screen and (max-width: 68.75em) {
+  @media only screen and (max-width: 75em) {
     .section__hero {
-      padding: 4vh 6vw 8vh; } }
+      padding: 8vh 6vw; } }
   .section__hero .hero__box {
     display: grid;
     justify-content: center;
@@ -118,16 +118,21 @@ body {
     justify-content: space-between;
     align-items: center;
     column-gap: 2.4rem;
-    grid-auto-columns: minmax(80rem, min-content);
-    grid-auto-rows: minmax(min-content, 60rem); }
-    @media only screen and (max-width: 87.5em) {
+    grid-auto-columns: minmax(90rem, max-content);
+    grid-auto-rows: minmax(min-content, 90rem); }
+    @media only screen and (max-width: 75em) {
       .section__hero .hero__box {
-        grid-template-columns: max-content minmax(min-content, 60rem); } }
+        grid-template-columns: max-content;
+        justify-content: center;
+        grid-template-rows: minmax(40rem, min-content); } }
   .section__hero .hero__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: "Libre Franklin"; }
+    @media only screen and (max-width: 75em) {
+      .section__hero .hero__info {
+        justify-self: start; } }
   .section__hero .hero__tertiary {
     margin-bottom: 1.2rem;
     letter-spacing: 2px;
@@ -308,10 +313,11 @@ body {
   background-color: #fefefe;
   padding: 8vh 8vw;
   display: grid;
+  max-width: 1000vw;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2.4rem; }
-  @media only screen and (max-width: 68.75em) {
+  @media only screen and (max-width: 75em) {
     .section__introduction {
       padding: 8vh 6vw; } }
   .section__introduction .introduction__figure {
@@ -358,23 +364,24 @@ body {
   background-color: #fefefe;
   padding: 8vh 8vw;
   text-align: center; }
-  @media only screen and (max-width: 68.75em) {
+  @media only screen and (max-width: 75em) {
     .section__products {
       padding: 8vh 6vw; } }
   .section__products .products {
     display: grid;
-    justify-content: center;
+    justify-content: space-between;
     grid-auto-flow: row;
     grid-auto-rows: minmax(max-content, 60rem);
     grid-template-columns: repeat(auto-fit, minmax(35rem, max-content));
     grid-template-rows: repeat(auto-fit, minmax(max-content, 60rem));
     margin: 3.2rem 0 4.8rem;
     justify-items: center;
-    gap: 5.2rem 8rem;
+    gap: 4.8rem 2.4rem;
     width: 100%; }
-    @media only screen and (max-width: 68.75em) {
+    @media only screen and (max-width: 75em) {
       .section__products .products {
-        justify-items: space-between; } }
+        justify-content: center;
+        gap: 4.8rem; } }
     .section__products .products .product {
       position: relative;
       height: 100%;
@@ -514,7 +521,7 @@ body {
 .section__discount {
   background-color: #fefefe;
   padding: 8vh 8vw; }
-  @media only screen and (max-width: 68.75em) {
+  @media only screen and (max-width: 75em) {
     .section__discount {
       padding: 8vh 6vw; } }
   .section__discount .discount__box {
@@ -523,6 +530,9 @@ body {
     grid-template-rows: repeat(auto-fit, minmax(min-content, 30rem));
     justify-content: space-between;
     gap: 3.2rem; }
+    @media only screen and (max-width: 75em) {
+      .section__discount .discount__box {
+        grid-template-rows: repeat(auto-fit, minmax(min-content, 25rem)); } }
     .section__discount .discount__box .img__box {
       position: relative;
       cursor: pointer;
@@ -545,7 +555,7 @@ body {
     .section__discount .discount__box .img__box--glasses .img__glasses {
       height: 120%;
       width: 100%;
-      transform: translateY(-100px);
+      transform: translateY(-80px);
       transition: all 0.4s;
       object-fit: cover; }
       .section__discount .discount__box .img__box--glasses .img__glasses:hover {
@@ -576,17 +586,21 @@ body {
 .section__description {
   background-color: #fefefe;
   padding: 8vh 8vw; }
-  @media only screen and (max-width: 68.75em) {
+  @media only screen and (max-width: 75em) {
     .section__description {
       padding: 8vh 6vw; } }
   .section__description .description__box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
-    grid-template-rows: minmax(60rem, min-content);
-    gap: 2.4rem;
+    grid-template-rows: minmax(50rem, min-content);
+    column-gap: 4.8rem;
+    row-gap: 4.8rem;
     backface-visibility: hidden;
     overflow: hidden;
     justify-content: space-between; }
+    @media only screen and (max-width: 75em) {
+      .section__description .description__box {
+        justify-content: space-evenly; } }
     .section__description .description__box .description {
       height: 100%;
       width: 100%;
@@ -646,7 +660,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2.4rem;
   font-size: 1.4rem; }
-  @media only screen and (max-width: 68.75em) {
+  @media only screen and (max-width: 75em) {
     .footer {
       padding: 4vh 6vw 8vh; } }
   .footer__list {

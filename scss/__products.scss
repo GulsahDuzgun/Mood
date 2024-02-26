@@ -8,18 +8,19 @@
 
   .products {
     display: grid;
-    justify-content: center;
+    justify-content: space-between;
     grid-auto-flow: row;
     grid-auto-rows: minmax(max-content, 60rem);
     grid-template-columns: repeat(auto-fit, minmax(35rem, max-content));
     grid-template-rows: repeat(auto-fit, minmax(max-content, 60rem));
     margin: 3.2rem 0 4.8rem;
     justify-items: center;
-    gap: 5.2rem 8rem;
+    gap: 4.8rem 2.4rem;
     width: 100%;
 
     @media only screen and (max-width: $bp-big) {
-      justify-items: space-between;
+      justify-content: center;
+      gap: 4.8rem;
     }
 
     .product {

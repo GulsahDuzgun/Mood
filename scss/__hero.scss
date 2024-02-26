@@ -3,7 +3,7 @@
   padding: 4vh 8vw 8vh;
   width: 100%;
   @media only screen and (max-width: $bp-big) {
-    padding: 4vh 6vw 8vh;
+    padding: 8vh 6vw;
   }
 
   .hero {
@@ -17,11 +17,13 @@
       align-items: center;
       column-gap: 2.4rem;
 
-      grid-auto-columns: minmax(80rem, min-content);
-      grid-auto-rows: minmax(min-content, 60rem);
+      grid-auto-columns: minmax(90rem, max-content);
+      grid-auto-rows: minmax(min-content, 90rem);
 
-      @media only screen and (max-width: 87.5em) {
-        grid-template-columns: max-content minmax(min-content, 60rem);
+      @media only screen and (max-width: $bp-big) {
+        grid-template-columns: max-content;
+        justify-content: center;
+        grid-template-rows: minmax(40rem, min-content);
       }
     }
 
@@ -30,6 +32,9 @@
       flex-direction: column;
       justify-content: center;
       font-family: $font-style-italic;
+      @media only screen and (max-width: $bp-big) {
+        justify-self: start;
+      }
     }
 
     &__tertiary {
