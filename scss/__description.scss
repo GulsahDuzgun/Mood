@@ -7,7 +7,7 @@
 
   .description__box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 35rem));
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 35rem));
     grid-template-rows: minmax(30rem, 60rem);
     grid-auto-rows: minmax(20rem, 60rem);
     column-gap: 4.8rem;
@@ -15,8 +15,14 @@
     backface-visibility: hidden;
     overflow: hidden;
     justify-content: space-between;
+
     @media only screen and (max-width: $bp-big) {
       justify-content: space-evenly;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 40rem));
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 45rem));
     }
 
     .description {
