@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build-scss": "node-sass scss/main.scss css/style.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.prefix.css ",
+    "compress-css": "node-sass css/style.prefix.css css/style.min.css  --output-style compressed",
+    "kick-off": "npm-run-all build-scss prefix-css compress-css",
     "compile-scss": "node-sass scss/main.scss css/style.css -w",
     "live": "live-server",
     "stand-up": "npm-run-all --parallel compile-scss live"
@@ -12,7 +15,10 @@
   "author": "Gülşah Düzgün",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "node-sass": "^9.0.0",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0"
   }
 }
