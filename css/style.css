@@ -234,7 +234,7 @@ body {
   font-size: 1.4rem;
   font-weight: 500;
   font-style: italic;
-  margin-bottom: 5.2rem; }
+  margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -316,7 +316,7 @@ body {
   font-size: 1.4rem;
   font-weight: 500;
   font-style: italic;
-  margin-bottom: 5.2rem; }
+  margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -362,7 +362,7 @@ body {
   background-color: #fefefe;
   padding: 8vh 8vw;
   display: grid;
-  max-width: 1000vw;
+  max-height: 100vh;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2.4rem; }
@@ -704,7 +704,7 @@ body {
         line-height: 1.6;
         font-weight: 400; }
       .section__description .description__box .description:hover .img__box .description__img {
-        transform: translateY(-120px); }
+        transform: translateY(-60px); }
       .section__description .description__box .description:hover .img__box::after {
         transform: scaleX(100%);
         border: 2px solid #e9ecef; }
