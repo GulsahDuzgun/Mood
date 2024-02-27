@@ -40,11 +40,13 @@ body {
       .navigation__list {
         position: absolute;
         display: none;
-        background-color: #f8f9fa;
-        top: 90%;
-        left: 0; }
+        background-color: rgba(248, 249, 250, 0.9);
+        top: 100%; }
         .navigation__list:hover {
-          display: flex; } }
+          display: block; }
+        .navigation__list:hover .hover__list {
+          transform: translateX(35%);
+          top: 0; } }
     .navigation__list > * {
       position: relative; }
       .navigation__list > * .hover__list {
@@ -59,8 +61,8 @@ body {
         color: #212529; }
         @media only screen and (max-width: 58em) {
           .navigation__list > * .hover__list {
-            display: block;
-            background-color: rgba(248, 249, 250, 0.9);
+            display: none;
+            background-color: #f8f9fa;
             text-align: start;
             padding: 1.2rem 3.6rem; } }
       .navigation__list > * .hover__item {
@@ -128,7 +130,7 @@ body {
       background-color: rgba(194, 37, 92, 0.2); } }
   @media only screen and (max-width: 58em) {
     .navigation .logo:hover + .navigation__list {
-      display: flex; } }
+      display: block; } }
 
 /*
   SPACING SYSTEM (px)
