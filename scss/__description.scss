@@ -7,8 +7,9 @@
 
   .description__box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
-    grid-template-rows: minmax(50rem, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 35rem));
+    grid-template-rows: minmax(30rem, 60rem);
+    grid-auto-rows: minmax(20rem, 60rem);
     column-gap: 4.8rem;
     row-gap: 4.8rem;
     backface-visibility: hidden;
@@ -77,7 +78,6 @@
       &:hover {
         .img__box .description__img {
           transform: translateY(-120px);
-          top: 20px;
         }
 
         .img__box::after {
