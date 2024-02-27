@@ -456,6 +456,14 @@ body {
         background-image: url("../img/product__4--front.jpg"); }
         .section__products .products .product--4:hover {
           background-image: url("../img/product__4--back.jpg"); }
+      .section__products .products .product--5 {
+        background-image: url("../img/product__5--front.jpg"); }
+        .section__products .products .product--5:hover {
+          background-image: url("../img/product__5--back.jpg"); }
+      .section__products .products .product--6 {
+        background-image: url("../img/product__6--front.jpg"); }
+        .section__products .products .product--6:hover {
+          background-image: url("../img/product__6--back.jpg"); }
       .section__products .products .product__icons {
         display: inline-block;
         position: absolute;

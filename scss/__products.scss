@@ -65,6 +65,22 @@
         }
       }
 
+      &--5 {
+        background-image: url("../img/product__5--front.jpg");
+
+        &:hover {
+          background-image: url("../img/product__5--back.jpg");
+        }
+      }
+
+      &--6 {
+        background-image: url("../img/product__6--front.jpg");
+
+        &:hover {
+          background-image: url("../img/product__6--back.jpg");
+        }
+      }
+
       &__icons {
         display: inline-block;
         position: absolute;
