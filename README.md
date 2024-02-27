@@ -1,6 +1,6 @@
 # Mood
 
-_**What is Mood project ?** Mood is single page website which is a fictional clothing company. You can visit by clicking the following link &rarr; [Mood](https://mood-gldn.netlify.app/)_
+_**What is Mood project ?** Mood is single page website which is a fictional clothing company. I made this project entirely on my own from scratch. You can visit by clicking the following link &rarr; [Mood](https://mood-gldn.netlify.app/)_
 
 <br/>
 
