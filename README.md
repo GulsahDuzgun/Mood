@@ -19,7 +19,7 @@ _In this project I practiced what I have learned since Omnifood, Trillo, Natours
 > - _how to create responsive layout with auto-fit property,_
 > - _how to create grid container with text and ::before, ::after pseudo-elements._
 > - _how to use linear-gradient() function in background-image,_
-> - _how to use background-size, background-image, background-position properties properly_
+> - _how to use background-size, background-image, background-position properties properly,_
 > - _working with svg icons and color them according to currentcolor parameter,_
 > - _working with transform property,_
 > - _how to create a responsive component without media queries using the minmax() function,_
